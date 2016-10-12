@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         myToolbar.showOverflowMenu();
         setSupportActionBar(myToolbar);
-
     }
 
     @Override
@@ -31,19 +30,17 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_settings:
-                // User chose the "Settings" item, show the app settings UI...
+
                 Toast.makeText(MainActivity.this, "You have selected the Settings option", Toast.LENGTH_SHORT).show();
                 return true;
 
             case R.id.action_favorite:
-                // User chose the "Favorite" action, mark the current item
-                // as a favorite...
+
                 Toast.makeText(MainActivity.this, "You have selected the Set Favourite option", Toast.LENGTH_SHORT).show();
                 return true;
 
             default:
-                // If we got here, the user's action was not recognized.
-                // Invoke the superclass to handle it.
+
                 return super.onOptionsItemSelected(item);
 
         }
